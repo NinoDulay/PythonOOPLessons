@@ -70,3 +70,61 @@ print(account1.get_username())
 account1.set_password("Password12", "password12345")
 #account1.set_password("Password123", "password12345")
 print(account1.get_password())
+
+########################################################################
+#Encapsulation - nagtatago tayo ng mga attributes para hindi basta basta mapalitan ng mga user
+
+# class Account:
+#     def __init__(self, username, password):
+#         # Public Attributes
+#         # self.username = username
+#         # self.password = password
+
+#         #Private attributes
+#         self.__username = username
+#         self.__password = password
+
+#     #Getter 
+#     def get_username(self):
+#         return self.__username
+
+#     def get_password(self):
+#         return self.__password
+
+#     #Setter (naglalagay tayo ng mga restrictions)
+#     def set_username(self, new_username):
+#         if len(new_username) >= 5:
+#             self.__username = new_username
+
+#     def set_password(self, old_password, new_password):
+#         if old_password == self.__password:
+#             self.__password = new_password
+
+# #Instantiation
+# acc1 = Account("Nino", "Password123")
+# # acc1.username = "Johnjay"
+# # print(acc1.username)
+
+# #print(acc1.__password)
+
+# #Use the getters
+# # print(acc1.get_username())
+# # print(acc1.get_password())
+
+# #Use direct change
+# acc1.__username = "Johnjay"
+# acc1.__password = "password123456"
+
+# #Lets check the changes (hindi ito gagana kasi hindi tayo gumamit ng setter)
+# print(acc1.get_username())
+# print(acc1.get_password())
+
+# print()
+
+# #Use setters (indirect)
+# acc1.set_username("Nino Dulay")
+# acc1.set_password("Password123","NinoDulay18")
+
+# #Use the getter again the check the changes
+# print(acc1.get_username())
+# print(acc1.get_password())
